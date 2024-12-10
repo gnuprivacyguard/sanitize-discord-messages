@@ -17,7 +17,7 @@ int main() {
             std::string messagesFilePath = currentPath + "/" + channel + "/messages.json";
             
             // Open the json file
-        	std::ifstream messagesFiles(messagesFilePath);
+            std::ifstream messagesFiles(messagesFilePath);
             nlohmann::json messagesJSON;
             messagesFiles >> messagesJSON;
             std::vector<std::string> messages;
