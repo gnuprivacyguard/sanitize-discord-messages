@@ -22,6 +22,9 @@ g++ main.cpp -o compilerOutput
 ```
 run with ```./compilerOutput``` (with the .exe for windows) or double click the executable on windows
 
+> [!TIP]
+> Incase you don't wanna delete messages from a channel or some specific message, get that channel/message id and cut it out.
+
 ### Contact Discord support
 
 #### Go to the correct discord team
