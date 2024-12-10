@@ -1,0 +1,35 @@
+# Put in package/messages directory and run, output is in sensitive.txt, send it to Discord support explaining it's a list of sensitive messages you'd like to be deleted.
+import os
+import json
+
+channels_messages = {}
+messages_dir = os.path.dirname(__file__)
+
+# Get all directories from current path
+channels = [
+    channel
+    for channel in os.listdir(messages_dir)
+    if os.path.isdir(f"{messages_dir}/{channel}")
+]
+
+# Add all mesages from json to a dictionary
+for channel in channels:
+    messages_file = open(f"{messages_dir}/{channel}/messages.json", encoding="utf8")
+
+    messages = json.loads(messages_file.read())
+    messages = [str(message["ID"]) for message in messages]
+
+    # Add non-empty channels
+    if messages:
+        channels_messages[channel] = messages
+    
+    messages_file.close()
+
+# Write all the messages in the given format
+all = open(messages_dir + "/sensitive.txt", "w", encoding="utf8")
+
+for channel_id, messages in channels_messages.items():
+    messages = ", ".join(messages)
+    all.write(f"{channel_id}:\n{messages}\n\n")
+
+all.close() 
