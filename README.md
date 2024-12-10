@@ -28,7 +28,7 @@ run with ```./compilerOutput``` (with the .exe for windows) or double click the 
 Their [privacy team](https://support.discord.com/hc/en-us/requests/new?ticket_form_id=4750383925911) (Discord support site -> Submit a request -> Contact discord privacy -> Delete your personal information)
 
 #### The ticket description
-Ask them that you have sensitive messages that you can't access, append the output of the script in the attachments and tell them that it's in an accessible for them format with the proper channel and message ids
+tell that you have sensitive messages that you can't access and that you need to delete them, append the output of the script in the attachments and tell them that it's in an accessible for them format with the proper channel and message ids
 
 > [!NOTE]  
 > Incase they reply negatively, repeat the previous step but reworded or with extra requirements they might ask. 
