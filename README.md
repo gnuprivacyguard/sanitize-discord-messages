@@ -17,11 +17,11 @@
     ```
     
 #### Run the script
-    For python:
+ - For python:
     ```bash
     python3 main.py
     ```
-For C++:
+ - For C++:
     run with ```./compilerOutput``` (with the .exe for windows) or double click the executable on windows
 
 > [!TIP]
