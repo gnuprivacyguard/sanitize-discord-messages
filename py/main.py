@@ -12,7 +12,7 @@ channels = [
     if os.path.isdir(f"{messages_dir}/{channel}")
 ]
 
-# Add all mesages from json to a dictionary
+# Add all messages from json to a dictionary
 for channel in channels:
     messages_file = open(f"{messages_dir}/{channel}/messages.json", encoding="utf8")
 
@@ -25,11 +25,11 @@ for channel in channels:
     
     messages_file.close()
 
-# Write all the messages in the given format
+# Write each message with its channel ID and message ID in the new format
 all = open(messages_dir + "/sensitive.csv", "w", encoding="utf8")
 
 for channel_id, messages in channels_messages.items():
-    messages = ", ".join(messages)
-    all.write(f"{channel_id}:\n{messages}\n\n")
+    for message_id in messages:
+        all.write(f"{channel_id},{message_id}\n")  # Write channel ID and message ID on the same line, then newline
 
-all.close() 
+all.close()
