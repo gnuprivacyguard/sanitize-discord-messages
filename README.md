@@ -46,7 +46,7 @@ tell that you have sensitive messages that you can't access and that you need to
 
 ## Doesn't work?
 
-In the case it changed, please make an issue with their replies and I will look into it. (For your own safety dont append the messages list!)
+In the case it changed, please make an issue with their replies and I will look into it. (For your own safety dont append the list with your messages or message IDs!)
 
 
 ## Licenses
