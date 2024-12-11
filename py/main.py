@@ -26,7 +26,7 @@ for channel in channels:
     messages_file.close()
 
 # Write all the messages in the given format
-all = open(messages_dir + "/sensitive.txt", "w", encoding="utf8")
+all = open(messages_dir + "/sensitive.csv", "w", encoding="utf8")
 
 for channel_id, messages in channels_messages.items():
     messages = ", ".join(messages)

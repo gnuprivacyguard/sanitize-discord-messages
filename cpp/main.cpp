@@ -37,7 +37,7 @@ int main() {
     }
 
     // Write IDs into sensitive.txt
-    std::ofstream outputFile(currentPath + "/sensitive.txt");
+    std::ofstream outputFile(currentPath + "/sensitive.csv");
     for (const auto& [channelIDs, messages] : channelsMessages) {
         outputFile << channelIDs << ":\n";
         for (size_t i = 0; i < messages.size(); ++i) {
