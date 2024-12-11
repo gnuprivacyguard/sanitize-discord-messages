@@ -8,19 +8,21 @@
     Go to discord settings -> Privacy & Safety -> Request all of my data (to speed up the process, choose only messages)
 
 #### Place the script in the correct directory
+ - For python:
     Download the python script and place it into the messages folder
-
+ - For C++:
+    compile with 
+    ```bash
+    g++ main.cpp -o compilerOutput
+    ```
+    
 #### Run the script
-for python:
+For python:
 ```bash
 python3 main.py
 ```
-for c++:
-compile with 
-```bash
-g++ main.cpp -o compilerOutput
-```
-run with ```./compilerOutput``` (with the .exe for windows) or double click the executable on windows
+For C++:
+    run with ```./compilerOutput``` (with the .exe for windows) or double click the executable on windows
 
 > [!TIP]
 > Incase you don't wanna delete messages from a channel or some specific message, get that channel/message id and cut it out.
